@@ -26,23 +26,23 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!-- Optional: use when springdoc-openapi is on classpath to resolve spec URL -->
+   
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-configuration-processor</artifactId>
       <optional>true</optional>
     </dependency>
   </dependencies>
-
-  <!-- Replace YOUR_GITHUB_USERNAME and YOUR_REPO with your GitHub username and repo name -->
+ 
   <distributionManagement>
     <repository>
       <id>github</id>
-      <url>https://maven.pkg.github.com/YOUR_GITHUB_USERNAME/YOUR_REPO</url>
+      <url>https://maven.pkg.github.com/Bonker009/swagger-forge.git</url>
     </repository>
     <snapshotRepository>
       <id>github</id>
-      <url>https://maven.pkg.github.com/YOUR_GITHUB_USERNAME/YOUR_REPO</url>
+      <url>https://maven.pkg.github.com/Bonker009/swagger-forge.git</url>
+      <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
   </distributionManagement>
 
