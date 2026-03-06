@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.2.0</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>com.swaggerforge</groupId>
+  <artifactId>swagger-forge-spring-boot-starter</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>SwaggerForge Spring Boot Starter</name>
+  <description>Embed SwaggerForge API documentation UI in your Spring Boot app (works with springdoc-openapi)</description>
+
+  <properties>
+    <java.version>17</java.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!-- Optional: use when springdoc-openapi is on classpath to resolve spec URL -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+  <!-- Replace YOUR_GITHUB_USERNAME and YOUR_REPO with your GitHub username and repo name -->
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/YOUR_GITHUB_USERNAME/YOUR_REPO</url>
+    </repository>
+    <snapshotRepository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/YOUR_GITHUB_USERNAME/YOUR_REPO</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>

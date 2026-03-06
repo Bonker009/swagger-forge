@@ -1,0 +1,2 @@
+# Run from project root: npm run build:embed
+# Then: cp -r dist/embed/* swagger-forge-spring-boot-starter/src/main/resources/static/swagger-forge/
